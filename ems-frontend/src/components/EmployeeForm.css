@@ -1,0 +1,106 @@
+/* App.css */
+
+/* Define dark mode color variables */
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #f5f5f5;
+    --accent-color: #4caf50;
+    --input-bg: #2c2c2c;
+    --input-border: #444;
+    --error-color: #ff5252;
+    --success-color: #66bb6a;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  form {
+    background: var(--card-bg);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button.submit {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  button.reset {
+    background-color: var(--error-color);
+    color: white;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  .success-message {
+    color: var(--success-color);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    font-size: 14px;
+  }
+  
